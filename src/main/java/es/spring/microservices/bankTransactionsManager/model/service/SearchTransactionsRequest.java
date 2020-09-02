@@ -1,0 +1,16 @@
+package es.spring.microservices.bankTransactionsManager.model.service;
+
+import org.springframework.data.domain.Sort.Direction;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class SearchTransactionsRequest {
+
+	private SearchTransactionsFilter filter;
+	
+	private Direction direction;
+	
+}

@@ -1,0 +1,18 @@
+package es.spring.microservices.bankTransactionsManager.services;
+
+import es.spring.microservices.bankTransactionsManager.model.service.CreateTransactionRequest;
+import es.spring.microservices.bankTransactionsManager.model.service.SearchTransactionsRequest;
+import es.spring.microservices.bankTransactionsManager.model.service.SearchTransactionsResponse;
+import es.spring.microservices.bankTransactionsManager.model.service.Transaction;
+import es.spring.microservices.bankTransactionsManager.model.service.TransactionStatusRequest;
+import es.spring.microservices.bankTransactionsManager.model.service.TransactionStatusResponse;
+
+public interface TransactionService {
+
+	public Transaction createTransaction(CreateTransactionRequest createTransactionRequest);
+
+	public TransactionStatusResponse getTransactionStatus(TransactionStatusRequest transactionStatusRequest);
+
+	public SearchTransactionsResponse searchTransactions(SearchTransactionsRequest searchTransactionsRequest);
+
+}
